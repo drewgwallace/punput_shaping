@@ -26,7 +26,7 @@ chmod +x ~/printer_data/config/punput_shaping/punput_shaper.py
 
 Append the contents of `moonraker.txt` to your `moonraker.conf` or `moonraker.cfg` file to enable shell commands.
 
-> This adds the repo commands to Moonraker, enabling updates and shell command support.
+> Enable future updates through the update manager.
 
 ---
 
@@ -95,3 +95,6 @@ In Mainsail, you can add a console filter to hide the command logs for cleaner o
 - Navigate to **Settings → Console → Filters → Add Filter**  
 - Name: `PunputShaper`  
 - Regex: `.*Command \{punput\}.*`
+
+Update `variable_punputshaping_loop_duration` to use the `delayed_gcode` loop more or less frequently.  
+Be cautious of overusing Open API calls!
