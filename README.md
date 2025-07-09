@@ -1,5 +1,7 @@
 # 🧠 punput_shaping
 
+Open API comedy for your printer — now with perfectly tuned timing.
+
 ---
 
 ## 📦 Installation
