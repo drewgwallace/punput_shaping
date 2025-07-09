@@ -2,7 +2,7 @@
 
 Open API comedy for your printer — now with perfectly tuned timing.
 
-> ⚠️ **Requires** [Kalico](https://docs.kalico.gg/) or Klipper with [`gcode_shell_command`](https://github.com/dw-0/kiauh/blob/master/docs/gcode_shell_command.md) extension enabled.
+> ⚠️ **Requires** [Kalico](https://docs.kalico.gg/G-Code_Shell_Command.html?h=gcode_shell_command#passing-parameters) or Klipper with [`gcode_shell_command`](https://github.com/dw-0/kiauh/blob/master/docs/gcode_shell_command.md) extension enabled.
 
 ---
 
