@@ -10,6 +10,12 @@ Clone the repository into your Klipper configuration directory:
 git clone https://github.com/drewgwallace/punput_shaping.git ~/printer_data/config/punput_shaping
 ```
 
+Make the Python script executable by running:
+
+```bash
+chmod +x ~/printer_data/config/punput_shaping/punput_shaper.py
+```
+
 ---
 
 ## ⚙️ Setup Instructions
@@ -24,7 +30,7 @@ Append the contents of `moonraker.txt` to your `moonraker.conf` or `moonraker.cf
 
 ### 2. Set the Python Script Path
 
-In `punput_shaper.cfg`, update the `command:` line to match the full path for your user. Example:
+In `printer.cfg`, update the `command:` line to match the full path for your user. Example:
 
 ```ini
 [gcode_shell_command punput]
