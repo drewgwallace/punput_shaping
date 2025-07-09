@@ -15,7 +15,7 @@ git clone https://github.com/drewgwallace/punput_shaping.git ~/printer_data/conf
 ```
 
 Make the Python script executable by running:
-
+> ️ **Run again whenever updating this repository**
 ```bash
 chmod +x ~/printer_data/config/punput_shaping/punput_shaper.py
 ```
@@ -45,22 +45,42 @@ command: /home/pi/printer_data/config/punput_shaping/punput_shaper.py
 
 ### 3. Choose Your Joke Source
 
-You have two options for where jokes come from:
+You can select your preferred joke source by **passing an argument** to the G-code shell command.
 
-#### 🟢 Online (default)
+---
 
-- `punput_shaper.py` fetches a random joke from [icanhazdadjoke.com](https://icanhazdadjoke.com/api).
-- You can swap in other APIs (e.g., Official Joke API, Chuck Norris API) by editing the script.
+#### 🟢 Online Sources
 
-#### 🔵 Offline (no internet required)
-
-- Use `punput_shaper_list.py` instead, which pulls from a local file: `punput.txt`
-- Format: one joke per line
-
-Update your command in `punput_shaper.cfg` accordingly:
+Update your `printer.cfg` with one of the following arguments at the end of the command:
 
 ```ini
-command: /home/pi/printer_data/config/punput_shaping/punput_shaper_list.py
+[gcode_shell_command punput]
+command: /home/user/printer_data/config/punput_shaping/punput_shaper.py icanhaz
+```
+
+Replace `icanhaz` with any of the following options:
+
+| Argument   | Source                        | Description                              |
+|------------|-------------------------------|------------------------------------------|
+| `icanhaz`  | [icanhazdadjoke.com](https://icanhazdadjoke.com/api) | Classic dad jokes (default)             |
+| `official` | [Official Joke API](https://github.com/15Dkatz/official_joke_api) | Programming/general jokes               |
+| `norris`   | [Chuck Norris API](https://api.chucknorris.io/)      | Random Chuck Norris facts               |
+| `jokeapi`  | [JokeAPI](https://jokeapi.dev/)                       | One-liner programming jokes             |
+
+---
+
+#### 🔵 Offline Mode (No Internet Required)
+
+Use the `local` argument to read from a file:
+
+```ini
+command: /home/user/printer_data/config/punput_shaping/punput_shaper.py local
+```
+
+Place your own jokes (one per line) in:
+
+```
+~/printer_data/config/punput_shaping/punput.txt
 ```
 
 ---
