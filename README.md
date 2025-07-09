@@ -86,7 +86,7 @@ Also add this line to your `printer.cfg` to include the repo’s macros and conf
 
 To test manually, run from the Klipper console:
 
-```gcode
+```text
 RUN_SHELL_COMMAND CMD=punput
 ```
 
