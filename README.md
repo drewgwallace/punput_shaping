@@ -15,7 +15,7 @@ git clone https://github.com/drewgwallace/punput_shaping.git ~/printer_data/conf
 ```
 
 Make the Python script executable by running:
-> ️ **Run again whenever updating this repository**
+> ️⚠️ **Run again whenever updating this repository**
 ```bash
 chmod +x ~/printer_data/config/punput_shaping/punput_shaper.py
 ```
