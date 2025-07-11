@@ -53,11 +53,13 @@ Choose your preferred joke source by **passing an argument** to the G-code shell
 
 #### 🟢 Online Sources
 
-Update your `printer.cfg` with one of the following arguments at the end of the command:
-
+Create a macro in `printer.cfg` with a RUN_SHELL_COMMAND to one of the available commands.
+There is an example in punput_shaper.cfg:
 ```ini
-[gcode_shell_command punput]
-command: /home/pi/printer_data/config/punput_shaping/punput_shaper.py icanhazdadjoke
+[gcode_macro PunputShaping]
+variable_punputshaping_loop_duration: 900													#15 minutes default
+gcode:
+    RUN_SHELL_COMMAND CMD=punput_icanhazdadjoke
 ```
 
 Replace `icanhazdadjoke` with any of the following options:
@@ -76,7 +78,9 @@ Replace `icanhazdadjoke` with any of the following options:
 Use the `local` argument to read from a file:
 
 ```ini
-command: /home/pi/printer_data/config/punput_shaping/punput_shaper.py local
+[gcode_macro MyCustomMacro]
+gcode:
+    RUN_SHELL_COMMAND CMD=punput_local
 ```
 
 Place your own jokes (one per line) in:
