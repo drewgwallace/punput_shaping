@@ -139,7 +139,7 @@ Add a console filter to hide command logs:
 
 - Navigate to **Settings → Console → Filters → Add Filter**
 - **Name**: `PunputShaper`
-- **Regex**: `.*Command \{punput\}.*`
+- **Regex**: `.*Command \{punput_icanhazdadjoke\}.*`
 
 ### ⏱️ Adjust Loop Frequency
 
