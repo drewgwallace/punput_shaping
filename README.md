@@ -130,7 +130,7 @@ sudo apt install python3-requests  # Debian/Ubuntu-based distros
 Run manually from the Klipper console:
 
 ```gcode
-RUN_SHELL_COMMAND CMD=punput
+RUN_SHELL_COMMAND CMD=punput_icanhazdadjoke
 ```
 
 ### 🧹 Console Cleanup in Mainsail
