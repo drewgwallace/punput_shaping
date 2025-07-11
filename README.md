@@ -32,20 +32,11 @@ is_system_service: False
 managed_services: klipper
 ```
 
----
-
-### 2. Set the Python Script Path
-
-In `printer.cfg`, update the `command:` line to match the full path for your user. Example:
-
-```ini
-[gcode_shell_command punput]
-command: /home/**pi**/printer_data/config/punput_shaping/punput_shaper.py
-```
+Enable future updates through the update manager.
 
 ---
 
-### 3. Choose Your Joke Source
+### 2. Choose Your Joke Source
 
 Choose your preferred joke source by **passing an argument** to the G-code shell command.
 
@@ -53,11 +44,12 @@ Choose your preferred joke source by **passing an argument** to the G-code shell
 
 #### 🟢 Online Sources
 
-Create a macro in `printer.cfg` with a RUN_SHELL_COMMAND to one of the available commands.
-There is an example in punput_shaper.cfg:
+Create a macro in `printer.cfg` with a `RUN_SHELL_COMMAND` to one of the available commands.  
+There is an example in `punput_shaper.cfg`:
+
 ```ini
 [gcode_macro PunputShaping]
-variable_punputshaping_loop_duration: 900													#15 minutes default
+variable_punputshaping_loop_duration: 900  # 15 minutes default
 gcode:
     RUN_SHELL_COMMAND CMD=punput_icanhazdadjoke
 ```
@@ -67,7 +59,7 @@ Replace `icanhazdadjoke` with any of the following options:
 | Argument         | Source                                                  | Description                              |
 |------------------|----------------------------------------------------------|------------------------------------------|
 | `icanhazdadjoke` | [icanhazdadjoke.com](https://icanhazdadjoke.com/api)     | Classic dad jokes (default)              |
-| `officialjoke`   | [Official Joke API](https://github.com/15Dkatz/official_joke_api) | Programming/general jokes               |
+| `officialjoke`   | [Official Joke API](https://github.com/15Dkatz/official_joke_api) | Programming/general jokes       |
 | `norris`         | [Chuck Norris API](https://api.chucknorris.io/)          | Random Chuck Norris facts                |
 | `jokeapi`        | [JokeAPI](https://jokeapi.dev/)                           | One-liner programming jokes              |
 
@@ -87,6 +79,17 @@ Place your own jokes (one per line) in:
 
 ```
 ~/printer_data/config/punput_shaping/punput.txt
+```
+
+---
+
+### 3. Set the Python Script Path
+
+In `printer.cfg`, update the `command:` line to match the full path for your user. Example:
+
+```ini
+[gcode_shell_command punput_icanhazdadjoke]
+command: /home/**<YOUR_USER>**/printer_data/config/punput_shaping/punput_shaper.py icanhazdadjoke
 ```
 
 ---
@@ -112,41 +115,40 @@ gcode:
 
 ---
 
-## 💡 Tip 1
+## 💡 Tips
 
-   
-**Python script not running?**  
-   
-You may be missing a library:
+### 🛠️ Missing Python Library?
+
+You may be missing a required library. Install it with:
 
 ```bash
 sudo apt install python3-requests  # Debian/Ubuntu-based distros
 ```
 
-## 💡 Tip 2
-   
-**To test manually, run from the Klipper console:**
-   
-```text
+### 🧪 Test the Macro
+
+Run manually from the Klipper console:
+
+```gcode
 RUN_SHELL_COMMAND CMD=punput
 ```
 
-## 💡 Tip 3
+### 🧹 Console Cleanup in Mainsail
 
-**In Mainsail, add a console filter to hide command logs:**
-     
+Add a console filter to hide command logs:
+
 - Navigate to **Settings → Console → Filters → Add Filter**
-- Name: `PunputShaper`  
-- Regex: `.*Command \{punput\}.*`
+- **Name**: `PunputShaper`
+- **Regex**: `.*Command \{punput\}.*`
 
-## 💡 Tip 4
+### ⏱️ Adjust Loop Frequency
 
-**Adjust loop frequency via `variable_punputshaping_loop_duration`:**
-	
-> ⚠️ Be cautious of overusing Open API calls!
+Adjust `variable_punputshaping_loop_duration` to change how often the macro runs:
 
 ```ini
 [gcode_macro PunputShaping]
 variable_punputshaping_loop_duration: 900  # Seconds
     ...
 ```
+
+> ⚠️ **Be cautious of overusing Open API calls!**
