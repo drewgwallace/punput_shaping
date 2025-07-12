@@ -20,7 +20,7 @@ git clone https://github.com/drewgwallace/punput_shaping.git ~/printer_data/conf
 
 ### 1. Configure Moonraker
 
-Append to your `moonraker.conf` to enable updates.
+Append to your `moonraker.conf` to enable future updates through the update manager.
 
 ```ini
 [update_manager punput_shaping]
@@ -32,15 +32,12 @@ is_system_service: False
 managed_services: klipper
 ```
 
-Enable future updates through the update manager.
-
 ---
 
 ### 2. Choose Your Joke Source
 
 Choose your preferred joke source by **passing an argument** to the G-code shell command.
 
----
 
 #### 🟢 Online Sources
 
@@ -49,7 +46,6 @@ There is an example in `punput_shaper.cfg`:
 
 ```ini
 [gcode_macro PunputShaping]
-variable_punputshaping_loop_duration: 900  # 15 minutes default
 gcode:
     RUN_SHELL_COMMAND CMD=punput_icanhazdadjoke
 ```
@@ -63,7 +59,7 @@ Replace `icanhazdadjoke` with any of the following options:
 | `norris`         | [Chuck Norris API](https://api.chucknorris.io/)          | Random Chuck Norris facts                |
 | `jokeapi`        | [JokeAPI](https://jokeapi.dev/)                           | One-liner programming jokes              |
 
----
+
 
 #### 🔵 Offline Mode (No Internet Required)
 
@@ -110,8 +106,10 @@ For example, adding this loop to the end of your `print_start` macro will automa
 [gcode_macro print_start]
 gcode:
     ...
-    UPDATE_DELAYED_GCODE ID=PunputShaping_Loop DURATION={printer["gcode_macro PunputShaping_Loop"].punputshaping_loop_duration}
+    UPDATE_DELAYED_GCODE ID=PunputShaping_Loop DURATION={printer["gcode_macro PunputShaping"].punputshaping_loop_duration}
 ```
+
+> Adjust timing in gcode_macro PunputShaping.punputshaping_loop_duration
 
 ---
 
@@ -129,7 +127,7 @@ sudo apt install python3-requests  # Debian/Ubuntu-based distros
 
 Run manually from the Klipper console:
 
-```gcode
+```ini
 RUN_SHELL_COMMAND CMD=punput_icanhazdadjoke
 ```
 
