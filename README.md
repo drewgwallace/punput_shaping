@@ -1,6 +1,8 @@
 # 🤣 punput_shaping
 
-Open API comedy for your printer — now with perfectly tuned timing.
+Open API comedy for your printer — now shaping for maximum comedic resonance.
+
+[View example output](example.png)
 
 > ⚠️ **Requires** [Kalico](https://docs.kalico.gg/G-Code_Shell_Command.html?h=gcode_shell_command#passing-parameters) or Klipper with [`gcode_shell_command`](https://github.com/dw-0/kiauh/blob/master/docs/gcode_shell_command.md) extension installed.
 
@@ -8,7 +10,7 @@ Open API comedy for your printer — now with perfectly tuned timing.
 
 ## 📦 Installation
 
-Clone the repository into your Klipper configuration directory:
+Clone the repository into your Klipper config folder:
 
 ```bash
 git clone https://github.com/drewgwallace/punput_shaping.git ~/printer_data/config/punput_shaping
@@ -20,37 +22,17 @@ git clone https://github.com/drewgwallace/punput_shaping.git ~/printer_data/conf
 
 ### 1. Configure Moonraker
 
-Append to your `moonraker.conf` to enable future updates through the update manager.
+Add this line to your `printer.cfg` to include the repo’s macros and configs:
 
 ```ini
-[update_manager punput_shaping]
-type: git_repo
-origin: https://github.com/drewgwallace/punput_shaping.git
-path: ~/printer_data/config/punput_shaping
-primary_branch: main
-is_system_service: False
-managed_services: klipper
+[include punput_shaping/punput_shaper.cfg]
 ```
 
 ---
 
 ### 2. Choose Your Joke Source
 
-Choose your preferred joke source by **passing an argument** to the G-code shell command.
-
-
 #### 🟢 Online Sources
-
-Create a macro in `printer.cfg` with a `RUN_SHELL_COMMAND` to one of the available commands.  
-There is an example in `punput_shaper.cfg`:
-
-```ini
-[gcode_macro PunputShaping]
-gcode:
-    RUN_SHELL_COMMAND CMD=punput_icanhazdadjoke
-```
-
-Replace `icanhazdadjoke` with any of the following options:
 
 | Argument         | Source                                                  | Description                              |
 |------------------|----------------------------------------------------------|------------------------------------------|
@@ -59,46 +41,43 @@ Replace `icanhazdadjoke` with any of the following options:
 | `norris`         | [Chuck Norris API](https://api.chucknorris.io/)          | Random Chuck Norris facts                |
 | `jokeapi`        | [JokeAPI](https://jokeapi.dev/)                           | One-liner programming jokes              |
 
-
-
 #### 🔵 Offline Mode (No Internet Required)
 
-Use the `local` argument to read from a file:
-
-```ini
-[gcode_macro MyCustomMacro]
-gcode:
-    RUN_SHELL_COMMAND CMD=punput_local
-```
-
-Place your own jokes (one per line) in:
+Use the local source to pull jokes from [`punput.txt`](punput.txt), one per line.
 
 ```
 ~/printer_data/config/punput_shaping/punput.txt
 ```
 
+You can edit or replace this file with your own printer-themed puns.
+
 ---
 
 ### 3. Set the Python Script Path
 
-In `printer.cfg`, update the `command:` line to match the full path for your user. Example:
+In `printer.cfg`, customize the path and source:
+
+- `<YOUR_USER>` → your actual username  
+- `<YOUR_SOURCE>` → one of the joke sources listed above
 
 ```ini
-[gcode_shell_command punput_icanhazdadjoke]
-command: /home/**<YOUR_USER>**/printer_data/config/punput_shaping/punput_shaper.py icanhazdadjoke
+[gcode_shell_command punput]
+command: /home/<YOUR_USER>/printer_data/config/punput_shaping/punput_shaper.py <YOUR_SOURCE>
+```
+
+Example:
+
+```ini
+[gcode_shell_command punput]
+command: /home/pi/printer_data/config/punput_shaping/punput_shaper.py local
 ```
 
 ---
 
 ## 🧪 How to Use
 
-First, add this line to your `printer.cfg` to include the repo’s macros and configs:
 
-```ini
-[include punput_shaping/punput_shaper.cfg]
-```
-
-Then, add the `PunputShaping` macro to any G-code script.
+Call the PunputShaping macro manually from the Klipper console, or automatically inside another macro like print_start.
 
 For example, adding this loop to the end of your `print_start` macro will automatically run every 15 minutes (by default) while printing:
 
@@ -109,11 +88,23 @@ gcode:
     UPDATE_DELAYED_GCODE ID=PunputShaping_Loop DURATION={printer["gcode_macro PunputShaping"].punputshaping_loop_duration}
 ```
 
-> Adjust timing in gcode_macro PunputShaping.punputshaping_loop_duration
-
 ---
 
 ## 💡 Tips
+
+### Configure Moonraker
+
+Append the following to your moonraker.conf to enable updates:
+
+```ini
+[update_manager punput_shaping]
+type: git_repo
+origin: https://github.com/drewgwallace/punput_shaping.git
+path: ~/printer_data/config/punput_shaping
+primary_branch: main
+is_system_service: False
+managed_services: klipper
+```
 
 ### 🛠️ Missing Python Library?
 
@@ -128,7 +119,7 @@ sudo apt install python3-requests  # Debian/Ubuntu-based distros
 Run manually from the Klipper console:
 
 ```ini
-RUN_SHELL_COMMAND CMD=punput_icanhazdadjoke
+RUN_SHELL_COMMAND CMD=punput
 ```
 
 ### 🧹 Console Cleanup in Mainsail
