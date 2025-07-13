@@ -20,7 +20,7 @@ git clone https://github.com/drewgwallace/punput_shaping.git ~/printer_data/conf
 
 ## ⚙️ Setup Instructions
 
-### 1. Configure Moonraker
+### 1. Include .cfg file
 
 Add this line to your `printer.cfg` to include the repo’s macros and configs:
 
@@ -34,7 +34,7 @@ Add this line to your `printer.cfg` to include the repo’s macros and configs:
 
 #### 🟢 Online Sources
 
-| Argument         | Source                                                  | Description                              |
+| Source         | Link                                                  | Description                              |
 |------------------|----------------------------------------------------------|------------------------------------------|
 | `icanhazdadjoke` | [icanhazdadjoke.com](https://icanhazdadjoke.com/api)     | Classic dad jokes (default)              |
 | `officialjoke`   | [Official Joke API](https://github.com/15Dkatz/official_joke_api) | Programming/general jokes       |
@@ -43,11 +43,9 @@ Add this line to your `printer.cfg` to include the repo’s macros and configs:
 
 #### 🔵 Offline Mode (No Internet Required)
 
-Use the local source to pull jokes from [`punput.txt`](punput.txt), one per line.
-
-```
-~/printer_data/config/punput_shaping/punput.txt
-```
+| Source         | Link                                                  | Description                              |
+|------------------|----------------------------------------------------------|------------------------------------------|
+| `local` |  [`punput.txt`](punput.txt)     | A collection of 3D Printing puns, jokes, and comments              |
 
 You can edit or replace this file with your own printer-themed puns.
 
@@ -65,7 +63,7 @@ In `printer.cfg`, customize the path and source:
 command: /home/<YOUR_USER>/printer_data/config/punput_shaping/punput_shaper.py <YOUR_SOURCE>
 ```
 
-Example:
+Example using local source, [`punput.txt`](punput.txt):
 
 ```ini
 [gcode_shell_command punput]
@@ -77,7 +75,7 @@ command: /home/pi/printer_data/config/punput_shaping/punput_shaper.py local
 ## 🧪 How to Use
 
 
-Call the PunputShaping macro manually from the Klipper console, or automatically inside another macro like print_start.
+Call the **PunputShaping** macro manually from the Klipper console, or automatically inside another macro like print_start.
 
 For example, adding this loop to the end of your `print_start` macro will automatically run every 15 minutes (by default) while printing:
 
