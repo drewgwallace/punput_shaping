@@ -112,11 +112,12 @@ You may be missing a required library. Install it with:
 sudo apt install python3-requests  # Debian/Ubuntu-based distros
 ```
 
-### 🧪 Test the Macro
+### 🧪 Test the Shell Command or Macro
 
 Run manually from the Klipper console:
 
 ```ini
+PunputShaping
 RUN_SHELL_COMMAND CMD=punput
 ```
 
@@ -130,12 +131,12 @@ Add a console filter to hide command logs:
 
 ### ⏱️ Adjust Loop Frequency
 
-Adjust `variable_punputshaping_loop_duration` to change how often the macro runs:
+Copy into your `printer.cfg` to set how often the macro runs by overriding `variable_punputshaping_loop_duration` (in seconds):
 
 ```ini
 [gcode_macro PunputShaping]
 variable_punputshaping_loop_duration: 900  # Seconds
-    ...
+gcode:
+    RUN_SHELL_COMMAND CMD=punput
 ```
-
 > ⚠️ **Be cautious of overusing Open API calls!**
