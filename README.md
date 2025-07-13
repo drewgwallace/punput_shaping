@@ -60,14 +60,14 @@ In `printer.cfg`, customize the path and source:
 
 ```ini
 [gcode_shell_command punput]
-command: /home/<YOUR_USER>/printer_data/config/punput_shaping/punput_shaper.py <YOUR_SOURCE>
+command: python /home/<YOUR_USER>/printer_data/config/punput_shaping/punput_shaper.py <YOUR_SOURCE>
 ```
 
 Example using local source, [`punput.txt`](punput.txt):
 
 ```ini
 [gcode_shell_command punput]
-command: /home/pi/printer_data/config/punput_shaping/punput_shaper.py local
+command: python /home/pi/printer_data/config/punput_shaping/punput_shaper.py local
 ```
 
 ---
