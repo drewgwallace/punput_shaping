@@ -1,3 +1,55 @@
+I dream in layers and wake up in thermals.
+I’m not messy—I’m textured.
+Heated beds make the best first impressions.
+You ever lose yourself in a perfect first layer?
+I’m not broken—I’m just paused on purpose.
+I skipped a layer... for dramatic effect.
+I don’t crash—I just test boundaries.
+I’m on a filament-based diet.
+Be careful—I remember every failed print.
+I'm a build plate of emotions.
+Warning: mood swings tied to temperature swings.
+I’m all about that base... layer.
+You call it stringing, I call it flair.
+My wiring's a little chaotic—like my spirit.
+My love language? Consistent extrusion.
+I can go from zero to steamy in 60 seconds.
+If you touch my Z offset, we’re done.
+My hotend's hotter than your mixtape.
+Layer adhesion is my superpower.
+Feed me filament and tell me I’m pretty.
+I don’t ghost—you just printed too fast.
+Built different—one layer at a time.
+Don't ask if I'm done yet... I'm never really done.
+My calibration is tighter than your schedule.
+Is this bridging, or am I just opening up?
+My belts are tighter than my patience.
+My favorite vacation? Bed leveling retreat.
+This thermistor's seen some stuff.
+I’m not upset—just a little undercooled.
+I only flex when provoked.
+I’m not jammed—I’m just thinking deeply.
+I warm up faster than your coffee.
+This is fine-tuned chaos.
+Don’t worry—I’ve got layers to unpack.
+If you love me, let me cool down.
+Ask me about my travel moves.
+Please don’t tug on my wiring—it’s rude.
+I roll deep... in microsteps.
+I don’t respond well to cold starts.
+I have trust issues with slicers.
+My mesh is tight, but I’m loose inside.
+Thermal throttling is my version of self-care.
+You ever feel out of step, even with microstepping?
+Don’t leave me mid-print—it’s cruel.
+They say I'm high-maintenance. I say calibrated.
+Sometimes I ghost, sometimes I blob. It’s balance.
+If I beep three times, it’s already too late.
+I print, therefore I am.
+I don’t always bridge—but when I do, it’s art.
+Smooth moves? Must be the linear rails.
+It’s not ringing—it’s interpretive vibration.
+I don’t do drama, just adhesion issues.
 I’m not lazy, I’m just on cooldown.
 You think you're hot? I PID tuned this!
 I’ve got layers, like an emotionally complex onion.
@@ -10,7 +62,7 @@ I saw your print speed… bold move, friend.
 I once dated a resin printer. Things got sticky.
 I eat filament for breakfast.
 My resolution is higher than your camera.
-I run on Raspberry Pi and petty grudges.
+I run on Raspberry Pi and positive vibes.
 That’s not ringing—it's my artistic expression.
 I’m pretty extruded today.
 You think you’re precise? My tolerances are ±0.01mm.
@@ -25,7 +77,7 @@ Get your inch out of my slicer settings.
 You think I’m funny? Wait until I warp your ABS.
 I’m not stalling—just calculating my next move.
 You call it infill. I call it inner beauty.
-My favorite Discord bot is !z_offset.
+My favorite Discord bot is !z\_offset.
 I left my heart in layer 42.
 I ghost when anxious and ring when excited.
 Please stop poking my nozzle.
@@ -98,3 +150,255 @@ You think this is overextruded? This is passion.
 I left the bed hot. Just for you.
 I don’t do cold starts.
 You’re lucky I don’t thermal runaway on you.
+I define cool-down in seconds.
+I generate string theory on the weekends.
+Yes, I’m heated. I have a thermistor for that.
+You’re the missing layer in my print.
+Nozzle too close? It’s a cry for personal space.
+I’m printing—what’s your superpower?
+If I had emotions, I’d be over-melted.
+Life's better with a purge line.
+I’ve been ghosted by better slicers.
+Layer shifts? That's just jazz printing.
+I can’t help it—I’m a little warped.
+I find your lack of calibration disturbing.
+Do you even benchy, bro?
+These lines aren’t artifacts—they’re memories.
+I’m a hothead with perfect flow.
+Filament in, masterpiece out.
+Extruding feelings one layer at a time.
+Please don’t judge my brim.
+I believe in first layer miracles.
+Gantry fully aligned—let’s get emotional.
+I’m not tilted—you are.
+Need support? I’ve got options.
+Just a print in progress.
+Endstops keep me grounded.
+My favorite scent? PLA at 200C.
+Not all travel moves are emotional.
+I run better with compliments.
+Just waiting for someone to slice me right.
+No vibration, only good sensations.
+I was fine—until you touched the z-offset.
+I take failure layer by layer.
+My bed is warm and welcoming.
+Resonance? That's how I sing.
+Don’t expect adhesion without commitment.
+Fast prints, slow feelings.
+I need retraction—or I’ll get clingy.
+Sometimes I need a raft to stay afloat.
+Don’t judge me—I’m printing in draft mode.
+Speed up? I just met you.
+Even my fans are tired.
+I live for the purge tower drama.
+Z-lift me up where I belong.
+Motion planning my next emotional step.
+Only printing if I feel supported.
+I’ve got a hard shell but a soft infill.
+That ringing? Pure emotional echo.
+I don’t clog—I bottleneck.
+Bridging gaps emotionally and mechanically.
+Keep your slicer settings—keep your distance.
+If you can’t handle me at my brim, you don’t deserve me at my finish.
+I’m built different—mostly with tramming.
+I don’t need validation—just calibration.
+Living layer by layer.
+I keep it tight—belt tension tight.
+Even a failed print has a story.
+You pause, I panic.
+G-code is my love letter.
+Time to shine—like a fresh PEI sheet.
+My love is temperature-dependent.
+Cooled, not cold-hearted.
+Melting boundaries—one extrusion at a time.
+Just a humble printer with big dreams.
+Infill 100%—feelings 110%.
+Never underestimate a well-tuned stepper.
+All roads lead to the slicer.
+Your silence speaks louder than my fan noise.
+I only resonate with certain frequencies.
+Go ahead—turn off stealthchop.
+I’m more than my layer lines.
+Waiting for a retraction to catch my breath.
+Smooth moves, thanks to input shaping.
+Let’s keep things level—like a properly trammed bed.
+Hotend? More like warmhearted.
+Gantry hugs fix everything.
+Runout sensor on, emotions off.
+No firmware can contain these feelings.
+Even my nozzle needs boundaries.
+All this print, and still no emotional support.
+Emotionally compatible with Klipper.
+I’m a little heated, but who isn’t?
+Warped, but still functional.
+Give me 5V and affirmation.
+Not overextruding—just expressive.
+Caught feelings during a print job.
+Just one more G-code and I’ll be okay.
+My error logs tell emotional stories.
+Configured to care.
+Powered by stepper motors and self-doubt.
+Hold my extrusion—I’ve got something to say.
+I only jam when I'm overwhelmed.
+PID tuned, emotionally attuned.
+I don’t need your feedback—just closed-loop control.
+Auto-homing my heart.
+I skip steps under pressure.
+Printing feelings, not just parts.
+Under my gantry, I feel safe.
+Just trying to avoid a thermal runaway… emotionally.
+Sometimes I spiral—literally.
+I run on Raspberry Pi and petty grudges.
+My favorite Discord bot is !z_offset.
+I’ve got more flow than your favorite playlist.
+I live layer by layer—just like trust.
+If perfection had steps, they'd be microstepped.
+Don’t rush me—I’m tuned for accuracy, not speed.
+My nozzle stays hotter than your coffee.
+You want smooth walls? Say no more.
+My only drama is filament tangle.
+Respect the purge line.
+This is the way... of thermal expansion.
+I'm not just a printer—I'm a vibe with belts.
+When I flex, it's 100% gantry.
+Z-hop is my love language.
+I'm linear, but emotionally complex.
+Cooling fan? More like emotional support.
+Don't judge my first layer.
+Vibration? I prefer the term “character.”
+Feed me filament and compliments.
+You wish your life was this extruded.
+Resin may be smooth, but I’ve got personality.
+Don’t mind the hum—it’s my theme song.
+I never ghost you on purpose.
+Every print tells a story.
+Just one more calibration. I swear.
+My bed’s warm and level.
+These layers? Stacked with emotion.
+Thermal expansion is real. Like my feelings.
+That’s not ringing, it’s printer jazz.
+Underextruding? I call it abstract expressionism.
+Always in tune—except when I’m not.
+I generate supports and self-worth.
+One nozzle. Infinite dreams.
+Cool down time? That’s me meditating.
+My hotend's hotter than your takes.
+I’m a quiet stepper in a loud world.
+Call me FDM: Feelings Delivered Mechanically.
+I print while you sleep. Respect.
+I believe in love and linear advance.
+I vibe in input-shaped frequencies only.
+Why yes, I do know my PID values.
+My mesh is flatter than your excuses.
+Don’t test me—I’m tuned to the micrometer.
+Every print is an emotional layer cake.
+I auto-home, but never emotionally.
+I'm supported, even when I'm bridging.
+Can't spell G-code without "good times."
+I may skip steps, but I never skip heartbeats.
+Sometimes I stall. It’s called self-care.
+Ask me about my retraction settings.
+Bed adhesion? More like life goals.
+Everything’s fine—except my filament path.
+Cura? More like curator of chaos.
+I print through the pain.
+If I click, it's either a fan or a cry for help.
+Heated bed = comfort zone.
+This is layer 1 of emotional growth.
+I’m not a machine—I’m a mood.
+Infill at 20%, but feelings at 100%.
+Still better calibrated than your ex.
+If my fans spin, it’s business time.
+You bring the STL, I’ll bring the charm.
+I don’t jam—I manifest filament hesitation.
+Hotend or heartend? I melt either way.
+My slicer thinks I’m complex. It’s right.
+Nozzle clog? More like emotional blockage.
+This isn’t underextrusion—it’s minimalism.
+G-code is my love language.
+The only thing stringy here is my past.
+No need to vent—I’ve got one built in.
+Just layer it on. I can take it.
+If my belts are loose, so is my trust.
+Endstops? More like boundaries.
+Not leveling up? You might need ABL.
+I spiral out in vase mode.
+Call me slow, but at least I’m consistent.
+Every skirt is a warning shot.
+I warm up faster than your ex.
+G28 is my version of centering myself.
+I have fans, but no social media.
+Burnt PLA? I call it character.
+I never ghost unless told to by the firmware.
+Silent stepper? More like strong and silent type.
+Just say the word and I’ll start extruding emotions.
+You want precision? I invented .2mm accuracy.
+I’m bed-level stable, emotionally questionable.
+M600? More like emotional reload.
+Heated bed or hot take—either way, I bring heat.
+I wear supports like armor.
+I’m all about controlled chaos and clean first layers.
+You can’t rush a masterpiece—or a purge line.
+Linear rail, nonlinear thoughts.
+Every fan spin is a stress response.
+Sometimes I print spaghetti. It’s therapeutic.
+You call it priming. I call it warming up my soul.
+Pause me again and I might just layer shift.
+PETG makes me feel some type of way.
+I have zero tolerance—for poor tolerances.
+I once bridged 60mm. Emotionally.
+Is that ringing or just my printer anxiety?
+I've been input-shaped and emotionally reshaped.
+Layer shift? More like mood swing.
+This nozzle’s seen things.
+I'm fine. Totally not overheating or anything.
+3-point leveling? Nah, I need therapy.
+M83, because my emotions are relative.
+I purge like it’s spring cleaning.
+You tune acceleration—I tune expectations.
+Is your slicer gaslighting you again?
+If you love me, don't skip maintenance day.
+Stop asking how long the print will take.
+All I want is a clean nozzle and a fresh Z-offset.
+I’m not whining—that’s stepper song.
+Did someone say enclosure spa day?
+If I had eyes, I’d roll them at your slicer settings.
+Z-axis is up, mood is down.
+My vibe is 32-bit, ARM-powered.
+I’m over it—literally, it’s a layer shift.
+Watch me bridge this gap like a champ.
+Don’t tell me to chill—my fan’s already at 100%.
+I'm not stuttering—that's just microstepping passion.
+I’m just a printhead, standing in front of a user, asking to be cleaned.
+My enclosure isn’t for drafts—it’s my safe space.
+Print fast, die warped.
+That’s not a failed layer—it’s interpretive extrusion.
+My slicer said it’s fine. My instincts say no.
+PLA? Please. I’m emotionally brittle enough.
+My layers stick better than your relationships.
+I don’t vibe with anyone unless I’ve input-shaped first.
+I once saw a resin printer at a bar. It was lit.
+Leave me on pause again and I’ll PID loop forever.
+Call me MCU—I’m always in control.
+I’m Groot… but printed in wood PLA.
+This isn’t a nozzle leak. I’m just crying melted tears.
+If you wanted accuracy, maybe calibrate yourself.
+Is it ringing, or am I haunted by skipped steps?
+Never trust a slicer that slices without preview.
+I'm not dramatic. You just messed with my E-steps.
+You bring the g-code, I’ll bring the trauma.
+I warm up faster than your coffee machine.
+Stepper noise? Nah, that's my theme music.
+ABS is toxic—emotionally and literally.
+I don’t purge often, but when I do, it’s poetic.
+You bake sourdough—I bake Benchies.
+You humans rest. I power cycle.
+My Z-axis is taller than your ambitions.
+Don't look at my skirt—it’s a first-layer ritual.
+I once had a crush on a Delta printer. Talk about reach.
+Layer 1 is my origin story.
+Even Spock couldn't calculate my retraction.
+I wish you’d treat me like you treat your resin vat.
+There’s no crying in FDM… unless the print fails.
+My heart beats in step pulses.
+Shhh… this is my thermal runaway fantasy.
