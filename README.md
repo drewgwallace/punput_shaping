@@ -140,3 +140,16 @@ gcode:
     RUN_SHELL_COMMAND CMD=punput
 ```
 > ⚠️ **Be cautious of overusing Open API calls!**
+
+### ⏳️ Randomize Loop Frequency
+
+Copy into your `printer.cfg` and reference this loop to use randomized loop adjustments between -30 to +30 seconds from the value in `variable_punputshaping_loop_duration` (in seconds):
+
+```ini
+[delayed_gcode PunputShaping_Loop]
+gcode:
+	PunputShaping
+    PSUEDO_RAND
+    UPDATE_DELAYED_GCODE ID=PunputShaping_Loop DURATION={printer["gcode_macro PSUEDO_RAND"].psuedo_rand_value}
+```
+
